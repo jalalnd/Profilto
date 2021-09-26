@@ -4,6 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
@@ -16,24 +17,16 @@
             <div class="brand">
             </div>
             <div class="nav-list">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#hero">Action</a></li>
-                      <li><a class="dropdown-item" href="#about">Another action</a></li>
-                      <li><a class="dropdown-item" href="#contact">Something else here</a></li>
-                    </ul>
-                  </div>
                 
-                <div class="hamburger"><div class="bar"></div></div>
-                <ul>
-                    <li><a href="index.html" data-after="Home" onclick="Home()">Home</a></li>
-                    <li><a href="portfoliopage.html" adta-after="Portfolio">Portfolio</a></li>
-                    <li><a href="about" data-after="About" onclick="About()"> About</a></li>
-                    <li><a href="contact" data-after="Contact" onclick="Contact()">Contact</a></li>
+                
+                <div id="myDIV" class="hamburger"><div class="bar"></div></div>
+                <ul class="drop">
+                    <li><a id="Home" href="#hero" data-after="Home" >Home</a></li>
+                    <li><a id="but" href="portfoliopage.html" adta-after="Portfolio">Portfolio</a></li>
+                    <li><a id="About" href="#about" data-after="About" > About</a></li>
+                    <li><a id="Contact" href="#contact" data-after="Contact" >Contact</a></li>
                 </ul>
+                
             </div>
         </div>
     </div>
